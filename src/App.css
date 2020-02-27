@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+/* Home page */
+.hero{
+  margin-top: 80px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-buttons{
+    display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.right-button{
+  margin-left: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* About page */
+.about{
+  margin-top: 80px;
+}
+
+.about-bio{
+  width: 70%;
+}
+
+.skills{
+  margin-top: 50px;
+}
+
+/* Work Related */
+
+.work-content{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.work-cards{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-work{
+  margin: 15px;
 }
