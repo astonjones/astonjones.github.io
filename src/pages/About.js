@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Carousel } from 'react-bootstrap';
 import VirtualizedList from '../components/VirtualizedList';
 
 const About = () => {
