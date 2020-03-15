@@ -1,7 +1,99 @@
-/* Home page */
-.hero{
-  margin-top: 80px;
+/* this is the body, html elements, and scrollbar */
+:root{
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
 }
+
+body{
+  color: black;
+  background-color: white;
+}
+
+body::-webkit-scrollbar{
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #6649b8;
+}
+
+/* Navbar related */
+
+.myNav {
+  width: 5rem;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--bg-primary);
+  transition: width 200ms ease;
+}
+
+.nav-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-item{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:last-child{
+  margin-top: auto;
+}
+
+.nav-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: 600ms ease;
+}
+
+.nav-link:hover{
+  filter: grayscale(0%);
+}
+
+.link-text{
+  display: none;
+  margin-left: 1rem;
+
+}
+
+.nav-link .icon{
+  min-width: 2rem;
+}
+
+.myNav:hover{
+  width: 16rem;
+}
+
+.myNav:hover .link-text{
+  display: block;
+}
+
+.icon{
+  color: #ff7eee;
+  transition: 600ms ease;
+}
+
+/* Home page */
+/* .hero{
+  
+} */
 
 .hero-buttons{
     display: flex;
