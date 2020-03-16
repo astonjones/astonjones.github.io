@@ -169,43 +169,7 @@ main{
 }
 
 /* Home page */
-.hero{
- margin-left: 8rem; 
-}
-
-.hero-buttons{
-    display: flex;
-}
-
-.right-button{
-  margin-left: 50px;
-}
 
 /* About page */
-.about{
-  margin-top: 80px;
-}
-
-.about-bio{
-  width: 70%;
-}
-
-.skills{
-  margin-top: 50px;
-}
 
 /* Work Related */
-
-.work-content{
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.work-cards{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.card-work{
-  margin: 15px;
-}
