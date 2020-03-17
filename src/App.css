@@ -10,6 +10,7 @@
 }
 
 body{
+  font-family: 'Open Sans';
   color: black;
   background-color: white;
   margin: 0;
@@ -31,9 +32,9 @@ body::-webkit-scrollbar-thumb{
   background: #6649b8;
 }
 
-main{
-  margin-left: 5rem;
-  padding: 1rem;
+section{
+  display: flex;
+  padding: 12rem 0;
 }
 
 /* Navbar related */
@@ -91,11 +92,11 @@ main{
 }
 
 .fa-primary{
-  color: #ff7eee;
+  color: #00A7E1;
 }
 
 .fa-secondary{
-  color: #df49a6;
+  color:  #007EA7;
 }
 
 .fa-primary,
@@ -169,7 +170,35 @@ main{
 }
 
 /* Home page */
+.hero{
+  justify-content: center;
+  background-color: #5c5c64;
+}
 
 /* About page */
+.about{
+  justify-content: space-around;
+  background-color: #00A7E1;
+}
+
+.about-content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-skills{
+  display: flex;
+  align-items: center;
+}
 
 /* Work Related */
+.work{
+  justify-content: center;
+}
+
+/* Contact Section */
+.contact{
+  justify-content: center;
+  background-color: #007EA7;
+}
