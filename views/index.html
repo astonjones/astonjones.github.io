@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
-    rel="stylesheet"
-    />
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
+    <script src="/semantic/dist/semantic.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway&family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css" />
     <script defer src="theme.js"></script>
     <title>Aston Jones</title>
@@ -33,14 +33,14 @@
           </li>
     
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-circle" class="svg-inline--fa fa-user-circle fa-w-16" role="img" viewBox="0 0 496 512"><path class="fa-secondary" fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg>
-              <span class="link-text">About</span>
+            <a href="#skills" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="wrench" class="svg-inline--fa fa-wrench fa-w-16" role="img" viewBox="0 0 512 512"><path class="fa-secondary" fill="currentColor" d="M507.73 109.1c-2.24-9.03-13.54-12.09-20.12-5.51l-74.36 74.36-67.88-11.31-11.31-67.88 74.36-74.36c6.62-6.62 3.43-17.9-5.66-20.16-47.38-11.74-99.55.91-136.58 37.93-39.64 39.64-50.55 97.1-34.05 147.2L18.74 402.76c-24.99 24.99-24.99 65.51 0 90.5 24.99 24.99 65.51 24.99 90.5 0l213.21-213.21c50.12 16.71 107.47 5.68 147.37-34.22 37.07-37.07 49.7-89.32 37.91-136.73zM64 472c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z"/></svg>
+              <span class="link-text">Skills</span>
             </a>
           </li>
     
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#work" class="nav-link">
               <svg
                 xmlns="http://www.w3.org/2000/svg" 
                 aria-hidden="true" 
@@ -56,7 +56,7 @@
           </li>
     
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#contact" class="nav-link">
               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img" viewBox="0 0 512 512"><path class="fa-secondary" fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
               <span class="link-text">Contact</span>
             </a>
@@ -114,32 +114,6 @@
                   ></path>
                 </g>
               </svg>
-              <svg
-                class="theme-icon"
-                id="darkIcon"
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fad"
-                data-icon="sunglasses"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 576 512"
-                class="svg-inline--fa fa-sunglasses fa-w-18 fa-7x"
-              >
-                <g class="fa-group">
-                  <path
-                    fill="currentColor"
-                    d="M574.09 280.38L528.75 98.66a87.94 87.94 0 0 0-113.19-62.14l-15.25 5.08a16 16 0 0 0-10.12 20.25L395.25 77a16 16 0 0 0 20.22 10.13l13.19-4.39c10.87-3.63 23-3.57 33.15 1.73a39.59 39.59 0 0 1 20.38 25.81l38.47 153.83a276.7 276.7 0 0 0-81.22-12.47c-34.75 0-74 7-114.85 26.75h-73.18c-40.85-19.75-80.07-26.75-114.85-26.75a276.75 276.75 0 0 0-81.22 12.45l38.47-153.8a39.61 39.61 0 0 1 20.38-25.82c10.15-5.29 22.28-5.34 33.15-1.73l13.16 4.39A16 16 0 0 0 180.75 77l5.06-15.19a16 16 0 0 0-10.12-20.21l-15.25-5.08A87.95 87.95 0 0 0 47.25 98.65L1.91 280.38A75.35 75.35 0 0 0 0 295.86v70.25C0 429 51.59 480 115.19 480h37.12c60.28 0 110.38-45.94 114.88-105.37l2.93-38.63h35.76l2.93 38.63c4.5 59.43 54.6 105.37 114.88 105.37h37.12C524.41 480 576 429 576 366.13v-70.25a62.67 62.67 0 0 0-1.91-15.5zM203.38 369.8c-2 25.9-24.41 46.2-51.07 46.2h-37.12C87 416 64 393.63 64 366.11v-37.55a217.35 217.35 0 0 1 72.59-12.9 196.51 196.51 0 0 1 69.91 12.9zM512 366.13c0 27.5-23 49.87-51.19 49.87h-37.12c-26.69 0-49.1-20.3-51.07-46.2l-3.12-41.24a196.55 196.55 0 0 1 69.94-12.9A217.41 217.41 0 0 1 512 328.58z"
-                    class="fa-secondary"
-                  ></path>
-                  <path
-                    fill="currentColor"
-                    d="M64.19 367.9c0-.61-.19-1.18-.19-1.8 0 27.53 23 49.9 51.19 49.9h37.12c26.66 0 49.1-20.3 51.07-46.2l3.12-41.24c-14-5.29-28.31-8.38-42.78-10.42zm404-50l-95.83 47.91.3 4c2 25.9 24.38 46.2 51.07 46.2h37.12C489 416 512 393.63 512 366.13v-37.55a227.76 227.76 0 0 0-43.85-10.66z"
-                    class="fa-primary"
-                  ></path>
-                </g>
-              </svg>
-              <span class="link-text">Themify</span>
             </a>
           </li>
         </ul>
@@ -149,12 +123,12 @@
           <div class="hero-content">
               <h1>
                   <div class="me-div">
+                    <div class="me-pic">
+                      <img src="../AlsoMeCopy.jpg" />
+                    </div>
                     <div class="name-title">
                             Hi,
                       <br>  I'm Aston
-                    </div>
-                    <div class="me-pic">
-                      <img src="../AlsoMeCopy.jpg" />
                     </div>
                   </div>
                 </h1>
@@ -162,62 +136,146 @@
                     <p>
                         I was born and raised in a small town of Vidor, TX. I am currently a Junior at Lamar University in Beaumont, TX.
                         I strive to one day become a software engineer and I am working at it everyday.
-                        I say that I have a passion for learning and a knack for building things and making things come to life.
-                        I thouroughly enjoy engaging in projects with fellow with a team and seeing the accomplishment through.
+                        I say that I have a passion for learning and a knack for building and making things come to life.
+                        I thouroughly enjoy engaging in projects with a team and seeing the accomplishment through.
                     </p>
                 </div>
           </div>
           <!-- text break -->
-          <hr> 
+          <hr>
+          <div class="social"><a href="https://www.linkedin.com/in/aston-jones"><i class="big linkedin icon"></i></a></div>
 
       </header>
-      <section class="skills-widget">
+      <section id="skills" class="skills-widget">
         <div class="widget-content">
-            <div class="skills-title">
-              <h2>SKILLS</h2>
-              <p>Here are just a few of mua cool</p>
+            <div class="section-title">
+              <div class="title-side"></div>
+              <h1>Skills</h1>
+              <div class="title-side"></div>
             </div>
-            <div class="skills-show">These are skills</div>
+            <!-- Table of Skills -->
+            <table class="ui blue celled table">
+              <thead>
+                <tr><th>Skill</th>
+                <th>Years</th>
+                <th>Desc</th>
+              </tr></thead>
+              <tbody>
+                <tr>
+                  <td data-label="Name">Java</td>
+                  <td data-label="Age">3 years</td>
+                  <td data-label="Job">My first and best programming language. I picked it up in college and still use it for algorithm design</td>
+                </tr>
+                <tr>
+                  <td data-label="Name">Javascript</td>
+                  <td data-label="Age">2.5 years</td>
+                  <td data-label="Job">My second programming language and most popular. Great use for internet relations</td>
+                </tr>
+                <tr>
+                  <td data-label="Name">React</td>
+                  <td data-label="Age">< 1 year</td>
+                  <td data-label="Job">An overall amazing tool to make websites with. Concept of re-using components make the framework very powerful</td>
+                </tr>
+                <tr>
+                  <td data-label="Name">MongoDB</td>
+                  <td data-label="Age">2 years</td>
+                  <td data-label="Job">MongoDB has great potential for what it is worth. Easy for smaller projects that I work with</td>
+                </tr>
+                <tr>
+                  <td data-label="Name">RESTful APIs</td>
+                  <td data-label="Age">2 years</td>
+                  <td data-label="Job">Building web databases with REST architecture is always an interesting project, something I'd like to dig more into</td>
+                </tr>
+                <tr>
+                  <td data-label="Name">Kotlin</td>
+                  <td data-label="Age">< 1 year</td>
+                  <td data-label="Job">Kotlin is the most recent language I picked up, it's an efficient substitute for Java in Android Studio</td>
+                </tr>
+                <tr>
+                  <td data-label="Name">Android Studio</td>
+                  <td data-label="Age">< 1 year</td>
+                  <td data-label="Job">This is my newest pick up from my line of programming. Very powerful tool, being able to do build anything android related</td>
+                </tr>
+              </tbody>
+            </table>
         </div>
       </section>
 
-      <section class="work">
+      <section id="work" class="work">
         <div class="work-content">
           <div class="section-title">
             <div class="title-side"></div>
             <h1>Projects</h1>
             <div class="title-side"></div>
           </div>
+          <div class="section-subtext">
+            Excuse the load time for my project links, I am using a non-paid hosting service for them. Sorry for the inconvenience!
+          </div>
           <ol class="work-show">
             <!-- YelpCamp -->
             <li class="work-item">
-              <a href="https://secret-bayou-18204.herokuapp.com">
-                <img src="/yelpcampPic.png">
-              </a>
-              <p class="work-item-title">YelpCamp</p>
+              <div class="ui card">
+                <!-- <a href="https://secret-bayou-18204.herokuapp.com"> -->
+                <div class="image">
+                  <img src="/yelpcampPic.png">
+                </div>
+                <!-- </a> -->
+                <div class="content">
+                  <a class="header">YelpCamp</a>
+                  <div class="description">
+                    Yelp for campgrounds. Sign in, post and comment on different campgrounds. Built with a RESTful API that I made, that also uses MongoDB. Give it a try, sign up and post a campground!
+                  </div>
+                </div>
+              </div>
             </li>
+            <!-- Exercise Tracker -->
             <li class="work-item">
-              <!-- Exercise Tracker -->
-              <a href="https://floating-cliffs-22487.herokuapp.com/">
-                <img src="/exerciseTrackerPic.png">
-              </a>
-              <p class="work-item-title">Exercise Tracker</p>
+              <div class="ui card">
+                <!-- <a href="https://floating-cliffs-22487.herokuapp.com/"> -->
+                <div class="image">
+                  <img src="/exerciseTrackerPic.png">
+                </div>
+                <div class="content">
+                  <a class="header">Exercise Tracker</a>
+                  <div class="description">
+                    A simple REACT app that logs exercises. Also built with MongoDB and a RESTful API that I made. Go ahead and log some exercises!
+                  </div>
+                </div>
+              <!-- </a> -->
+              </div>
+            </li>
+            <!-- Arcade Machine Build -->
+            <li class="work-item">
+              <div class="ui card">
+                <!-- <a href="https://imgur.com/gallery/1JoO7Gf"> -->
+                <div class="image">
+                  <img src="/exerciseTrackerPic.png">
+                </div>
+                <div class="content">
+                  <a class="header">Self-built Arcade Machine</a>
+                  <div class="description">
+                    Built from scratch, and powered by raspberry pi. Not too much on the programming side, but was still a fun project.
+                  </div>
+                </div>
+              <!-- </a> -->
+              </div>
             </li>
           </ol>
         </div>
       </section>
 
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="section-title">
           <div class="title-side"></div>
           <h1>Contact me</h1>
           <div class="title-side"></div>
         </div>
         <div class="contact-content">
-          <form>      
+          <div class="section-subtext">Feel free to contact me about anything!</div>
+          <form action="/contact" id="contact-form" method="post" role="form">      
             <input name="name" type="text" class="feedback-input" placeholder="Name" />   
             <input name="email" type="text" class="feedback-input" placeholder="Email" />
-            <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+            <textarea name="message" class="feedback-input" placeholder="Message"></textarea>
             <input type="submit" value="SUBMIT"/>
           </form>
         </div>
