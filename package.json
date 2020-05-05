@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This is going to be my portfolio website",
   "main": "app.js",
-  "engines":{
+  "engines": {
     "node": "12.16.2"
   },
   "scripts": {
